@@ -1,0 +1,119 @@
+marquee {
+    border: 10px groove    #b200ff;
+    padding: 3px;
+}
+body {
+    background-image: url("https://wheelz.me/wp-content/uploads/2018/07/Nissan-Makes-100-Electric-Mobility-a-Mass-Market-Reality_Image.jpg");
+    color: white ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    scrollbar-3dlight-color: fuchsia;
+    background-position: center center;
+    background-size: 100%
+}
+
+center1:hover {
+    color: black;
+    font-weight: bold;
+    list-style-type: georgian
+}
+    center1:active  
+    {
+     color :#4cff00
+    }
+    div {
+        width: auto;
+        height: auto
+    }
+center 
+{
+    border: 10px groove #b200ff;
+    white-space:normal 
+}
+
+h 
+{
+    font-size: 150px;
+
+     
+}
+p1 {
+    
+    font-size: 75px;
+    color: #ff006e
+}
+
+
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav {
+    width: 500px;
+    margin: 20px auto;
+    background-color: #808080;
+    padding: 0 20px;
+    min-height: 42px
+}
+
+    .nav > li {
+        padding: 10px 15px;
+        float: left;
+    }
+
+        .nav > li a {
+            color: #ffff;
+            text-decoration: none;
+        }
+
+    .nav.menu {
+        position: relative
+    }
+
+        .nav.menu .submenu {
+            position: absolute;
+            top: 40px;
+            left: 0;
+            width: 220px;
+            background-color: red;
+            padding: 10px;
+            -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.5);
+            -moz-box-shadow: 0 1px 1px rgba(0,0,0,.5);
+            box-shadow: 0 1px 1px rgba(0,0,0,.5);
+            display: none
+        }
+
+            .nav .menu .submenu li {
+                padding: 10px
+            }
+
+                .nav .menu .submenu li a {
+                    color: #777;
+                    text-decoration: none
+                }
+
+                    .nav .menu .submenu li a:hover {
+                        color: red;
+                    }
+
+            .nav .menu .submenu:before {
+                content: "";
+                border-left: 6px solid transparent;
+                border-right: 6px solid transparent;
+                border-bottom: 6px solid red;
+                width: 0;
+                height: 0;
+                position: absolute;
+                left: 30px;
+                top: -6px
+            }
+
+        .nav .menu:hover .submenu {
+            display: block
+        }
+
+
+

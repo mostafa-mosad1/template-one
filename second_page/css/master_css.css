@@ -1,0 +1,39 @@
+/*
+ seletor{
+    property:value;
+    property2:value; 
+}
+*/
+/* لو عندي عنصر هعمل كدا */
+p {
+    color: red;
+    font-size: 20px;
+}
+
+/* لو عندي كلس هعمل كدا */
+.wel1 {
+    color: gray;
+    font-size: 30px;
+}
+
+/* لو عندي اي دي هعمل كدا */
+#wel2 {
+    color: orange;
+    font-size: 40px;
+}
+
+/* background =>
+1-color
+2-img
+ */
+
+.background-color {
+    background-color: red;
+    background-color: rgb(0 255 0);
+    background-color: #00ff00;
+}
+
+.background-img {
+    background-image: url("../frist_page/2022_10_17_23_29_IMG_9426.JPG");
+
+}

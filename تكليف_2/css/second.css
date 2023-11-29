@@ -1,0 +1,503 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    list-style: none;
+}
+
+.elzero {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: orange;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+
+
+    border-right: 10px solid orangered;
+
+    border-left: 10px solid blue;
+}
+
+/* p {
+    width: 200px;
+    height: 100px;
+    background-image: linear-gradient(50deg, red, green, blue);
+} */
+
+.parent-flex {
+    width: 600px;
+    height: 300px;
+    padding: 10px;
+    background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+.parent-flex div {
+    width: calc(96% / 3);
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent-flex2 {
+    width: 600px;
+    height: 300px;
+    padding: 10px;
+    background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: hidden;
+
+
+
+
+}
+
+.parent-flex2 div {
+    width: calc(95% / 3);
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one {
+    order: 6;
+    height: 30px;
+    align-self: flex-end;
+    /* position: relative;
+    top: 100px; */
+}
+
+.two {
+    order: 5;
+}
+
+.three {
+    order: 2;
+    height: 50px;
+}
+
+.four {
+    order: 3;
+
+}
+
+.five {
+    order: 4;
+
+
+}
+
+.six {
+    order: 1;
+
+
+}
+
+.parent-flex3 {
+    width: 600px;
+    height: 300px;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+
+}
+
+.flex3-one,
+.flex3-two,
+.flex3-three,
+.flex3-four {
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+    background-color: rgb(42, 124, 124);
+    justify-content: flex-end;
+}
+
+.flex3-two {
+    align-self: flex-end;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex3-four {
+    align-self: flex-end;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page {
+    width: 750px;
+    background-color: red;
+    padding: 10px;
+}
+
+.header {
+    background-color: #eee;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+
+
+}
+
+.links li {
+    display: flex;
+    padding-left: 10px;
+}
+
+.main-area {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    background-color: #eee;
+    width: 450px;
+    height: 300px;
+}
+
+.sidebar {
+
+    background-color: #eee;
+    width: 270px;
+    height: 300px;
+}
+
+.gradient {
+    width: 600px;
+    height: 100px;
+    background-color: #eee;
+    text-align: center;
+    position: relative;
+}
+
+.gradient::before {
+    content: "";
+    width: 600px;
+    height: 10px;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    background-image: linear-gradient(90deg,
+            orangered 20%,
+            blueviolet 20%,
+            blueviolet 40%,
+            blue 40%,
+            blue 60%,
+            red 60%,
+            red 80%,
+            cyan 80%);
+}
+
+.gradient::after {
+    content: "";
+    width: 600px;
+    height: 10px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background-image: linear-gradient(90deg,
+            orangered 20%,
+            blueviolet 20%,
+            blueviolet 40%,
+            blue 40%,
+            blue 60%,
+            red 60%,
+            red 80%,
+            cyan 80%);
+}
+
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 720px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr;
+    row-gap: 5px;
+    column-gap: 10px;
+
+}
+
+.grid div {
+    background-color: cyan;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout {
+
+    padding: 20px;
+    width: 720px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header header header header header header"
+        "sec sec sec . side side"
+        "foot foot foot foot foot foot ";
+
+}
+
+.head {
+    grid-area: header;
+    background-color: cyan;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.section {
+    grid-area: sec;
+    background-color: red;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.aside {
+    grid-area: side;
+    background-color: green;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.footer {
+    grid-area: foot;
+    background-color: blueviolet;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.grid-2 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: auto repeat(2, 1fr) auto;
+    grid-template-rows: 1fr auto;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.grid-2 div {
+    background-color: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-3 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "eight  eight eight"
+        "two two three"
+        "four  five five"
+        "six  five five"
+        "seven  five five"
+        "one  one one";
+    row-gap: 5px;
+    column-gap: 5px;
+
+
+
+}
+
+.grid-3 div {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+
+}
+
+.grid-3-one {
+    grid-area: one;
+
+
+}
+
+.grid-3-two {
+    grid-area: two;
+}
+
+.grid-3-five {
+    grid-area: five;
+    /* display: grid;
+    grid-row: span 3; */
+
+}
+
+.grid-3-eight {
+    grid-area: eight;
+
+}
+
+.grid-4 {
+    background-color: goldenrod;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    align-content: space-between;
+    gap: 5px 5px;
+
+}
+
+.grid-4 div {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+}
+
+.grid-5 {
+    background-color: #ddd;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "a1 a1 s1 d1"
+        "f1 g1 g1 d1"
+        "f1 k1 k1 d1"
+        "c1 c1 c1 c1"
+    ;
+    gap: 5px 5px;
+
+}
+
+.grid-5-one,
+.grid-5-two,
+.grid-5-three,
+.grid-5-four,
+.grid-5-five,
+.grid-5-six,
+.grid-5-seven,
+.grid-5-nine,
+.grid-5-eight,
+.grid-5-ten {
+    padding: 10px;
+    background-color: rgb(121, 192, 197);
+    color: white;
+    border-bottom: 2px solid red;
+}
+
+.grid-5-one {
+    grid-area: a1;
+}
+
+.grid-5-two {
+    grid-area: s1;
+}
+
+.grid-5-three {
+    background-color: black;
+    grid-area: d1;
+}
+
+.grid-5-four {
+
+    grid-area: f1;
+    grid-row: span 2;
+}
+
+.grid-5-five {
+
+    grid-area: g1;
+    background-color: black;
+}
+
+.grid-5-six {
+
+    grid-area: k1;
+}
+
+.grid-5-four {
+
+    grid-area: f1;
+}
+
+.grid-5-four {
+
+    grid-area: f1;
+}
+
+.reto {
+    width: 200px;
+    height: 200px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.reto:hover {
+    background-color: blue;
+    transform: rotate(-20deg);
+    position: relative;
+    bottom: 10px;
+}
+
+.reto::before {}
+
+.translate {
+    b
+}

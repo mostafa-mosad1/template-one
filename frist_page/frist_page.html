@@ -1,0 +1,460 @@
+<!-- الغرض منوا ان بيعمل random page standard mode not 21e  in html5 -->
+
+<html>
+<!DOCTYPE html>
+
+<head>
+
+    <!--بيكون هنا metadate معلومات عن الصفحه و تعليمات*** ودا عنصر بيقفل نفسوا self closing tap-->
+    <!-- علشان يدعم الغه العربيه -->
+    <meta charset="UTF-8">
+    <!-- لو عوز احط وصف للمشروع لما ابحث عنوا في السرش -->
+    <meta name="description" content="this the booking website">
+    <!-- عنوان التاب اللي فوق -->
+    <title> frist_home</title>
+    <style> </style>
+    <script> </script>
+</head>
+
+<body>
+
+    <!-- heading=>h1,h2,h3,h4,h5,h6 -->
+
+    <h1>thiiiiiiiii</h1>
+    <h3>thiiiiiiiii</h3>
+    <h2>thiiiiiiiii</h6>
+
+        <p>thiiiiiiiii</p>
+        <p hidden>thiiiiiiiii</p>
+
+        <!-- 
+            formating elements
+
+            b => bold text
+            strong => bold = important text 
+
+            i => itlake text
+            em => itlake text = important text
+
+            mark => mark text or highlight text or shado
+            u => under lined
+            small => small text
+            del => delete text
+            ins => inserted text = under lined
+            sup => الاس
+            sub => الاس من تحت
+        -->
+        <p>country is <b>eyp</b> in world</p>
+        <p>country is <strong>eyp</strong> in world</p>
+        <p>country is <em>eyp</em> in world</p>
+        <p>country is <i>eyp</i> in world</p>
+        <p>country is <mark>eyp</mark> in world</p>
+        <p>country is <u>eyp</u> in world</p>
+        <p>country is <small>eyp</small> in world</p>
+        <p>country is <del>eyp</del> in world</p>
+        <p>country is <ins>eyp</ins> in world</p>
+        <p>2<sup>2</sup> = 4</p>
+        <p>h<sub>2</sub>o</p>
+
+        <!-- 
+            angular = link  href= heperTextRefrence بياخد المسار اللي انا رايح فيه 
+            in line دول عناصر ان لين جنب بعض 
+            target="_blank" => معانا ان هيفتح الينك في تاب تاني 
+            title="go to any think" =>لما اقف عليه يظهر الكلام شبه نبذه مختصره 
+             href="#5 " لو نفس الصفحه عوز اروح حاجه معينه ع طول بعمل اي دي لو يكون id="5"
+              href="mailto: url" لو عوز احط ايميل شخص
+            
+         -->
+        <a href=" " target="_blank" title="go to any think"> الكلام اللي هيظهر </a>
+        <br>
+        <a href="mailto:eltombary1@gmail.com " target="_blank" title="mail"> الكلام اللي هيظهر </a>
+
+
+
+        <!-- 
+            عرض الصور في الموقع 
+            src => source image
+            alt => alternate text نص بديل
+        -->
+
+        <img src="2022_10_17_23_29_IMG_9426.JPG" alt="mostafa">
+        <img src="imgs/2022_10_17_23_29_IMG_9426.JPG" alt="mostafa">
+        <img src="miss-image.JPG" alt="mostafa">
+
+        <!-- 
+            **list
+        1-ul => unordered List >>li = list item
+        2-ol => ordered List   >>li = list item مرتب 
+        3-dl  => dt >> dd
+
+        parameters
+        <ol reversed> =>
+        <ol start="10">
+        <ol type="A">
+          -->
+
+        <ul>
+            <li>ali</li>
+            <li>MOStafa</li>
+            <li>mosad</li>
+            <li>hamed</li>
+        </ul>
+
+
+        <ol>
+            <li>ali</li>
+            <li>MOStafa</li>
+            <li>
+                mosad <ul>
+                    <li>ali</li>
+                    <li>MOStafa</li>
+                    <li>mosad</li>
+                    <li>hamed</li>
+                </ul>
+
+            </li>
+            <li>hamed</li>
+        </ol>
+
+
+        <dl>
+            <dt>mostafa</dt>
+            <dd> mosad hamed tonbary</dd>
+
+            <dt>mostafa</dt>
+            <dd> mosad hamed tonbary</dd>
+            <dd> mosad hamed tonbary</dd>
+            <dd> mosad hamed tonbary</dd>
+            <dd> mosad hamed tonbary</dd>
+
+        </dl>
+
+
+        <!-- 
+            **table =>
+            
+            1-thead
+            2-tbody
+            3-tfoot
+
+            tr = table row
+            td = table data cell
+            th = table head cell
+    
+            tr >>>>((((((th,td))))))
+         -->
+        <table border="2" cellpadding="15">
+            <thead>
+                <caption>client price </caption>
+                <tr>
+                    <th>first</th>
+                    <th>last</th>
+                    <th>total price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>mostafa</td>
+                    <td>ali</td>
+                    <td>20</td>
+                </tr>
+
+                <tr>
+                    <td>mostafa</td>
+                    <td>mosad</td>
+                    <td>100</td>
+                </tr>
+
+                <tr>
+                    <td>ali</td>
+                    <td>mosad</td>
+                    <td>80</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="2"> total </td>
+                    <td>200</td>
+                </tr>
+            </tfoot>
+
+        </table>
+
+        <!-- 
+           span =>  inline element  cssعلشان لو عوز ااستيل عليه 
+           br => new line
+           hr => horzintal role and closing tag and block tag not in line becuase separation 
+
+          -->
+
+        <span>mostafa mosad hamed</span>
+        <span>mostafa mosad hamed</span>
+        <hr>
+        <p>mostafa mosad hamed</p>
+        <span>mostafa mosad hamed</span>
+
+
+
+        <!-- 
+            div king of element = containar
+              ممكن يحتوي ع مجموعه له نفس الخوص هستيل هليهم مره واحده 
+              entities list
+              لو عوز اطبع تاج اعمل اي &lt;p&gt;
+              copy right=> &copy;
+         -->
+
+        <div style="background-color: red;text-align: center;">
+            <h1>xn,jn</h1>
+            <p>m,,nslcn<span style="font-size: 25px;color: white;">1250</span>lxnklnsx</p>
+            <p>&lt;p&gt; </p>
+            <p>&lt;a&gt;</a></p>
+            <span>1250</span>
+            <span>$</span>
+            <p style="font-size: 25px;color: white;">copy right &copy;</p>
+        </div>
+
+        <!-- audio and video -->
+
+        <audio controls autoplay loop muted>
+            <source src="audio/10. Heita Sad.mp3" type="audio/mp3">
+            this website doesnot support the audio
+        </audio>
+
+        < <hr>
+            <br>
+            <video controls autoplay loop muted width="300" height="200" poster="imgs/2022_10_17_23_29_IMG_9426.JPG">
+                <source src="vedio/VivaCut_video_1631197351663_1080HD.mp4" type="video/mp4">
+                this website doesnot support the video
+            </video>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <!-- 
+
+            form  =>
+
+            action=" " => url to server backend
+            method="get" => showe data as query in url
+            method="post" =>donot showe data as query in url
+            required => must enter data in field
+            label => showe data out lable to knowe what should enter
+            placeholder =>showe data in lable to knowe what should enter
+            name => recive data as defult name
+            value => give data as Iam enter
+            disabled => for showe data only but donot send to database
+            readonly => for showe data only but send to database
+            autofocus => when open page write in field that
+            minlenght => least number of charecter
+            radio => type="radio" name="os" value="mac" select one only >> ممكن احط كلمه check علشان يختار كاطفلت
+            checkbox => <input type="checkbox" name="lang" value="flutter"> select many item
+            علشان اربط حاجتين  >> id="name"&for="name"
+            
+          -->
+            <form action="" method="get" style="text-align:center;">
+                <div>
+                    <label>User Name</label>
+                    <input type="text" required placeholder="User Name" name="user" value="mostafa" readonly>
+                </div>
+                <br>
+
+                <div>
+                    <label>Password</label>
+                    <input type="password" required placeholder="password" name="pass">
+                </div>
+
+                <br>
+
+                <div>
+                    <label>phone number</label>
+                    <input type="number" placeholder="phone" name="phone">
+                </div>
+
+                <br>
+
+                <div>
+                    <label>email</label>
+                    <input type="email" required placeholder="mail" name="mail" value="eltonbary@gmail.com" disabled>
+                </div>
+
+                <br>
+
+                <div>
+                    <label>category</label>
+                    <input type="text" name="category" placeholder="category">
+                </div>
+                <br>
+                <div>
+                    <label>range</label>
+                    <input type="range" min="0" max="100" name="range" step="20">
+
+                </div>
+
+                <br>
+                <hr>
+                <hr>
+
+                <br>
+
+                <div>
+                    <input type="radio" name="os" value="windows">
+                    <label>windows</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="os" value="mac120">
+                    <label>mac</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="os" value="linux">
+                    <label>linux</label>
+                </div>
+
+                <br>
+                <hr>
+                <br>
+                <div>
+                    <input type="checkbox" name="lang" value="html5">
+                    <label>html5</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="lang" value="css">
+                    <label>css</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="lang" value="JS">
+                    <label>JS</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="lang" value="dart">
+                    <label>dart</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="lang" value="flutter">
+                    <label>flutter</label>
+                </div>
+                <br>
+                <hr>
+                <hr>
+                <br>
+                <div>
+
+                    <label for="os"> operating System</label>
+                    <select name="operating System" id="os">
+                        <option value="1">book1</option>
+                        <option value="2" selected>book2</option>
+                        <option value="3">book3</option>
+
+                        <optgroup label="operating System">
+                            <option value="win">windows</option>
+                            <option value="mac">mac</option>
+                            <option value="lin">linux</option>
+                        </optgroup>
+
+                        <optgroup label="lag">
+                            <option value="html">html</option>
+                            <option value="css">css</option>
+                            <option value="JS">JS</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <br>
+                <hr>
+                <hr>
+                <div>
+                    <input list="programming" name="pro">
+
+                    <datalist id="programming">
+                        <option value="html">
+                        <option value="css">
+                        <option value="JS">
+                        <option value="html">
+                        <option value="css">
+                        <option value="JS">
+                    </datalist>
+                </div>
+                <hr>
+                <br>
+                <div>
+                    <label for="des">description</label>
+                    <textarea name="description" id="des" cols="30" rows="10" placeholder="description"></textarea>
+                </div>
+                <br>
+                <hr>
+                <hr>
+                <br>
+                <div>
+                    <label>search</label>
+                    <input type="search" name="search" placeholder="search">
+                </div>
+                <br>
+                <div>
+                    <label>file</label>
+                    <input type="file">
+                </div>
+                <br>
+                <div>
+                    <label>url</label>
+                    <input type="url" name="url" placeholder="url">
+                </div>
+                <br>
+                <br>
+                <br>
+                <div>
+                    <label>date</label>
+                    <input type="date" name="date">
+                </div>
+                <br>
+                <br>
+                <div>
+                    <label>datetime-local</label>
+                    <input type="datetime-local" name="search">
+                </div>
+                <br>
+                <hr>
+                <input type="reset" value="reset">
+                <input type="submit" value="save">
+            </form>
+            <!-- 
+
+                    bdi  لو عوز اعمل عزل لكلام  
+                     
+                -->
+            <div style="width: 120px;">
+                <p>https://elzero.orghttps://elzero.orghttps://elzero.org/ <wbr> html-assignments <wbr> lesson-from-35-to-37/
+                </p>
+            </div>
+            <p> <bdi>السلام عليكم</bdi> 2 welcome</p>
+
+
+            <!-- pre بيحفظ كل حاجه زاي ما هي غالبان في الكود اكتر 
+                iframe => لو غوز اخمل صفحه من متصفحه تاني 
+            -->
+            <p> int x =5 ,
+                int y =12,
+                x+y=17
+            </p>
+
+            <pre>
+                int x =5 ,
+                int y =12,
+                x+y=17
+            </pre>
+            <iframe src="https://elzero.org/html-assignments-lesson-from-35-to-37/" frameborder="0"
+                style="width: 800px;height: 500px;align-self: center;"></iframe>
+
+
+
+
+
+</body>
+
+</html>

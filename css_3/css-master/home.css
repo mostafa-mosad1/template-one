@@ -1,0 +1,322 @@
+ /*
+ seletor{
+    property:value;
+    property2:value; 
+}
+*/
+ /* لو عندي عنصر هعمل كدا */
+ .max p {
+     color: red;
+     font-size: 20px;
+ }
+
+ /* لو عندي كلس هعمل كدا */
+ .wel1 {
+     color: gray;
+     font-size: 30px;
+ }
+
+ /* لو عندي اي دي هعمل كدا */
+ #wel2 {
+     color: orange;
+     font-size: 40px;
+ }
+
+ /* background =>
+1-color
+2-img
+ */
+
+ .background-color {
+
+     background-color: red;
+     /* name color */
+     background-color: rgb(0 255 0);
+     /* red green blue / 50% gradients */
+     background-color: #00ff00;
+     /*color hex code => 00->ff */
+ }
+
+ .background-img {
+
+     background-image: url("../frist_page/2022_10_17_23_29_IMG_9426.JPG");
+     background-repeat: no-repeat;
+     background-repeat: repeat;
+     background-repeat: repeat-x;
+     background-repeat: repeat-y;
+
+     /* fixed-scroll  */
+     background-attachment: fixed;
+     /*
+    left center right
+
+    top
+    center
+    bottom
+    200px 300 px
+    30% 40%
+      */
+     background-position: center center;
+
+     /* 
+    cover => strectch image 
+    contain => full
+    30px 200px
+    */
+     background-size: 30px 200px;
+ }
+
+ padding {
+
+     /* all edge */
+     padding: 10px;
+     /* top right bottom left */
+     padding: 10px 20px 30px 40px;
+     /*top = bottom right=left */
+     padding: 10px 20px;
+     /* only */
+     padding-top: 10px;
+
+
+     /*  
+    padding جوه بورد الداخلي للصفجه
+    margin خارج بورد الداخلي للصفجه
+    */
+ }
+
+ border {
+     border-width: 10px;
+     border-color: red;
+     border-style: solid;
+
+     border: 10px solid green;
+ }
+
+ .display {
+     /* 
+    هنا display مش بيحتفظ بالمكان بتاعوا يعني لو مخفي اللي تحت يطلع فوق 
+   none-block-inline-inline_block
+    */
+     display: block;
+     /* 
+    visibility  بيحتفظ بالمكان بتاعوا يعني لو مخفي اللي فوق مش يطلع فوق
+
+visible-hidden
+    */
+     visibility: visible;
+
+ }
+
+
+ .overflow {
+     min-width: 200px;
+     max-width: 300px;
+     height: 350px;
+     background-color: #eee;
+     overflow: auto;
+     /* overflow-x: a=scroll;
+     overflow-y: hidden; */
+     /* text-overflow: ellipsis;   */
+ }
+
+ .max p {
+     color: green;
+     font-size: 20px;
+     display: block;
+ }
+
+ .max .nested {
+     color: red;
+     vertical-align: bottom;
+
+ }
+
+ .max .nested .sub {
+     color: blue;
+     vertical-align: text-bottom;
+
+ }
+
+ .max {
+     border-width: 10px;
+     border-color: red;
+     border-style: solid;
+     border: 10px dashed green;
+     padding: 20px;
+     white-space: normal;
+
+ }
+
+ .v20 {
+
+     /* 
+    letter-spacing:2px ; المسافه بين الحروف 
+
+    word-spacing: 2px; المسافه بين الكلمات
+
+    text-indent: 100px; مسافه فاضيه
+
+
+    line-height: 1.6px; 
+    */
+
+     /* 
+    (normal-nowrap)
+    normal=> هنا هيعمل سطر جديد ممكن يعمل مشكله في التصميم
+    nowrap =>  هنا مش هيعمل سطر جديد علشان ميعملش مشكله في التصميم زاي عنوان مثلا
+   white-space: ; */
+
+ }
+
+ .font {
+     font-family: Arial, Helvetica, sans-serif;
+     /*  احط الينك في head علشان يعمل امر الاستدعاء الخط 
+     
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&display=swap" rel="stylesheet">
+     */
+     font-family: 'Edu TAS Beginner', cursive;
+     /* 
+     large - small -meduim - number
+     */
+     font-size: 20px;
+     /* 
+     100-200-....900-bold
+     */
+     font-weight: bold;
+     /* 
+     italic- normal
+     */
+     font-style: italic;
+     /* 
+بيعطي قيمه الحروف الكبير لكن علي شكل اصغر من الحروف الكابيتل 
+*/
+     font-variant: small-caps;
+ }
+
+ .measure {
+     /*
+     px=>الرقم اللي انا عوزه 
+     em=>بياخد الرقم اللي في بيرنت طب لو مفيش بياخد من البادي 
+     rem=>بياخد الرقم من first root اللي هو head بيكون 16 px 
+     %=>بياخد النسبه في الميه vw=>view port width 
+     */
+ }
+
+ .cursor {
+     /* 
+    pointer link - move mointion - grap - auto
+    */
+     cursor: auto;
+ }
+
+ ((float-clear) .submit-1 {
+         background-color: blue;
+         padding: 10px;
+         overflow: hidden;
+     }
+
+     .submit-1 div {
+         padding-top: 15px;
+         margin-left: 5px;
+         text-align: center;
+         width: 18%;
+         height: 40px;
+         background-color: red;
+         float: left;
+
+     }
+
+     .clear {
+         clear: both;
+
+     }) .position {
+
+     /* 
+   static =>  ثابت في مكان معين
+   relative => متغير بانسبه للمكان الاصلي بتاعوا هو 
+   absolute => متغير بالنسبه ابعاد الشاشه اللي هو الباي اما لو جوه ديف لازم تكون relative علشان يتحرك جوه
+   fixed => ثابت في مكان معين حتي و في اسكور 
+   sticky => لما اوصل ليه بيتعلق فوق جنب appbar 
+    */
+
+     .position .sub-1 {
+         width: fit-content;
+
+         padding: 10px;
+         background-color: blue;
+         margin: 5px;
+         position: absolute;
+         bottom: 0px;
+     }
+
+     .position .sub-2 {
+         width: fit-content;
+         padding: 10px;
+         background-color: red;
+         margin: 5px;
+
+
+     }
+
+     .man {
+         background-color: black;
+         width: 300px;
+         height: 200px;
+         position: relative;
+     }
+
+     .z-index {
+         /* 
+    الازم يكون في postion علشان اقدر اعمل z-index
+    */
+
+         z-index: 100;
+     }
+
+     .pseoude-class {
+         hover checked empty visited input fouse
+     }
+
+     .pseoude-element {
+         first letter first line selection
+     }
+
+     .box-size {
+         /* هنا بياخد المساحه من البورد الدخالي من خارج */
+         box-sizing: border-size;
+
+     }
+
+     .transition {
+         transition-duration: ;
+         الوقت اللي هيحصل فيه التغير transition-delay: ;
+         التاخير قبل التغير transition-property: ;
+         اللي عوز اعمل عليه تاغير transition-timing-function: ;
+         ممكن ياخد شويه خصاص زاي ease-in\out transition: pro dur del time;
+
+     }
+
+     .flex {
+         display: flex;
+         flex-direction: row/column/column-reverse/row-reverse;
+         flex-wrap: nowrap/wrap;
+         flex-flow: (direction)/(flex-wrep);
+         justify-content: center/flex-start/flex-end/space-around/space-between/space-evenly;
+         align-items: stretch defult item/center/flex-start/flex-end;
+         align-content: stretch defult item/center/flex-start/flex-end;
+         #child#
+         flex-grow: 0 defult item /1 2 3 4 ;
+         flex-shrink: 1 defult item / 2 3 4 ;
+         order: 1 2 3 4 5 6 ;
+         flex-basis: ; بتاخد القيمه سواء الطول او العرض 
+         flex:grow shrink  flex-basis;
+ 
+     }
+
+     .mm{
+        cursor: pointer; موشر التحريك 
+        caret-color: blueviolet; دا الموشر اللي جوه مكان الكتابه
+        pointer-events: none; لو لينك مش عوزخ يروح في حته
+    }
