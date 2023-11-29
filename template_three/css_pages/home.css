@@ -16,7 +16,9 @@ html {
     scroll-behavior: smooth;
 }
 
-body {}
+body {
+    font-family: "Open Sans", sans-serif;
+  }
 
 ul {
     list-style: none;
